@@ -16,10 +16,6 @@ repositories {
     google()
 }
 
-dependencies {
-   // implementation(kotlin("stdlib-js"))
-}
-
 kotlin {
     js(IR) {
         browser()
