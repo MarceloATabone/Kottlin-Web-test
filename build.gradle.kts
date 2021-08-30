@@ -1,6 +1,5 @@
 import org.jetbrains.compose.compose
 
-
 plugins {
     //id("org.jetbrains.kotlin.js") version "1.5.10"
     kotlin("multiplatform") version "1.5.21"
@@ -28,6 +27,8 @@ kotlin {
             resources.srcDir("src/main/resources")
 
             dependencies {
+                implementation(kotlin("stdlib-js"))
+                implementation(npm("css-typed-om", "0.4.0"))
                 implementation(compose.web.core)
                 implementation(compose.runtime)
             }
